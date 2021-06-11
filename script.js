@@ -11,9 +11,7 @@
 (function() {
       setInterval(() => {
           var elems = [].filter.call( document.getElementsByTagName("div"), function( input ) {
-              if (input.className == "watermark") {
-                  input.innerHTML = "";
-              }
+            input.className == "watermark" ? input.innerHTML = "" : "";
           });
       }, 1000)
 })();
